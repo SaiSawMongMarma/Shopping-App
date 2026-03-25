@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Homepage.styles.css'; 
+
 const HomePage = () => (
   <div className='homepage'>
     <div className='directory-menu'>
