@@ -1,27 +1,3 @@
-//we are going create a dhop folder in pages folder
-//shop.component.jsx....................................
-import React from "react";
-
-import SHOP_DATA from './shop.data.js';
-
-class ShopPage extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      collections: SHOP_DATA
-    };
-  }
-
-    render(){
-        return <div>SHOP PAGE</div>
-    }
-
-}
-
-export default ShopPage;
-
-//shop.data.jsx............................................
 const SHOP_DATA = [
   {
     id: 1,
@@ -271,29 +247,3 @@ const SHOP_DATA = [
 ]
 
 export default SHOP_DATA;
-
-//App.js.....................................................
-import React from 'react';
-
-import { Routes, Route } from 'react-router-dom';
-//we are going to use Routes instead of Switch.
-
-import './App.css';
-
-import HomePage from './pages/homepage/homepage.component';
-import ShopPage from './pages/shop/shop.component.jsx'; ////////
-
-function App() {
-  return (
-    <div>
-      <Routes>
-       <Route exact path='/' element={<HomePage />} />
-       <Route path='/shop' element={<ShopPage />} /> ///////////
-      </Routes>
-    </div>
-  );
-}
-// 1.use element instead of component
-//2.pass the component as JSX: <HomePage /> 
-
-export default App;
