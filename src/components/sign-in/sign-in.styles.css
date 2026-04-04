@@ -1,5 +1,12 @@
 .sign-in {
     width: 30vw;
+    display: flex;
+    flex-direction: column;
+
 }
 
-/* //30% of the total view. */
+.sign-in .title {
+    margin: 10px 0;
+}
+
+/* //30% of the total view. */  
